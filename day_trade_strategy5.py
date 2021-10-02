@@ -31,11 +31,13 @@ data = Data()
 data_start_date = '2020-01-01'
 excel_output_date = datetime.now().strftime('%Y-%m-%d')
 
+#add comment2
 #add comment
 #excel_output_date = '2021-07-27'
 #excel_output_date = '2021-01-15'# need to be larger than data_start_date
 
 # print(close_price[(close_price.index<=close_price.index[-2]) & (close_price.index>=close_price.index[-5])])
+#add comment3
 
 equity_con = data.get('股本合計')/10/10000*100
 equity_con = equity_con[(equity_con.index>=data_start_date) & (equity_con.index<=excel_output_date)].copy()
